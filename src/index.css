@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+:root {
+  --color-cream: #faf6f1;
+  --color-warm-white: #fff9f4;
+  --color-parchment: #f0e6d8;
+  --color-wood: #8b6f47;
+  --color-wood-dark: #6b5535;
+  --color-wood-light: #a68a64;
+  --color-ink: #2c2416;
+  --color-ink-light: #5a4a3a;
+  --color-ink-muted: #8a7a6a;
+  --color-accent: #c45d3e;
+  --color-accent-hover: #a94e33;
+  --color-green: #4a7c59;
+  --color-green-hover: #3d6649;
+  --color-red: #b34040;
+  --color-red-hover: #933535;
+  --color-border: #e0d5c8;
+  --color-card: #ffffff;
+  --color-sidebar: #f7f0e8;
+
+  --font-serif: 'Merriweather', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+
+  --radius: 8px;
+  --shadow-sm: 0 1px 3px rgba(44, 36, 22, 0.06);
+  --shadow-md: 0 3px 12px rgba(44, 36, 22, 0.08);
+  --shadow-lg: 0 8px 30px rgba(44, 36, 22, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: var(--color-cream);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+a {
+  color: var(--color-wood);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-wood-dark);
+}
+
+button {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.55em 1.15em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+input, select, textarea {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  padding: 0.6em 0.85em;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-warm-white);
+  color: var(--color-ink);
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-wood);
+  box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.1);
+}
+
+::placeholder {
+  color: var(--color-ink-muted);
+}
