@@ -1,6 +1,6 @@
 # The Book Nook - Frontend
 
-React frontend za online knjižaru. Povezuje se na GraphQL backend na `localhost:4000`.
+React frontend for an online bookstore showcasing GraphQL vulnerabilities.
 
 ## Tech stack
 
@@ -9,34 +9,32 @@ React frontend za online knjižaru. Povezuje se na GraphQL backend na `localhost
 - Apollo Client
 - React Router
 
-## Pokretanje
+## Getting started
 
 ```bash
 npm install
 npm run dev
 ```
 
-Otvara se na `http://localhost:5173/`.
+Opens on `http://localhost:5173/`. Backend must be running.
 
-Backend mora biti pokrenut da bi aplikacija radila.
+## Pages
 
-## Stranice
+- `/` - landing page
+- `/login` - login
+- `/register` - registration
+- `/books` - browse and search books by genre
+- `/my-books` - purchased books
+- `/admin` - add/delete books (admin only)
 
-- `/` - početna stranica
-- `/login` - prijava
-- `/register` - registracija
-- `/books` - pregled i pretraga knjiga po žanrovima
-- `/my-books` - kupljene knjige
-- `/admin` - dodavanje/brisanje knjiga (admin)
-
-## Struktura
+## Project structure
 
 ```
 src/
-  App.jsx              - routing i auth state
+  App.jsx              - routing and auth state
   graphql/
-    client.js          - Apollo Client konfiguracija
-    queries.js         - GraphQL upiti i mutacije
+    client.js          - Apollo Client config
+    queries.js         - GraphQL queries and mutations
   pages/
     WelcomePage.jsx
     LoginPage.jsx
